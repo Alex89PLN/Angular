@@ -1,0 +1,11 @@
+<main>
+  <h2>Array properties</h2>
+  <mat-list role="list" *ngFor="let item of dummy |async">
+
+    <mat-list-item role="listitem">
+      <p>{{item.name}} : {{item.value}}</p>
+      <button mat-raised-button color='primary' (click)='editProperty(item.name, item.value)'>edit</button>
+      <button mat-raised-button color='warn' (click)='delete(item.name)'>delete</button>
+    </mat-list-item>
+  </mat-list>
+</main>

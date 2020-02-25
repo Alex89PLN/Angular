@@ -1,0 +1,15 @@
+<main>
+  <h2>Property list</h2>
+  <mat-list role="list" *ngFor='let prop of propertyList | async; let i = index;'>
+    <mat-list-item role="listitem">
+      <p>{{prop}}</p>
+      <button mat-raised-button color='primary' (click)='openAddPropertyDialog(prop, i)'>Edit</button>
+      <button mat-raised-button color='primary' (click)='openAddPropertyToDummyDialog(prop)'>add to dummy</button>
+      <button mat-raised-button color='warn' (click)='deleteProperty(i)'>delete</button>
+    </mat-list-item>
+  </mat-list>
+
+</main>
+<button class="main" mat-raised-button (click)='openAddPropertyDialog()' color='primary'>add new property</button>
+<button class="main" mat-raised-button (click)='openAddPropertyToDummyDialogDirect()' color='primary'>add new property to object</button>
+

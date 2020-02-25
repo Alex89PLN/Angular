@@ -19,6 +19,17 @@
       "dom"
     ]
   },
+  "paths": {
+    "@interfaces": [
+      "src/app/interfaces"
+    ],
+    "@store": [
+      "src/app/store"
+    ],
+    "@Actions": [
+      "src/app/store/actions"
+    ]
+  },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true

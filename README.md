@@ -6,22 +6,27 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Service Test 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ full cover of `PropertyListService`
 
-## Build
+## Unit Test
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`AppComponent` check modal open/close
+`AddPropertyDummyFormComponent` add property action
 
-## Running unit tests
+## Validations
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+no error validations for effects
+no validation for forms (reqiure validation don't count)
+no validation messages
 
-## Running end-to-end tests
+## Material Components
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+`MatListModule`, `MatInputModule`,`MatDialogModule`,`MatButtonModule`,`MatFormFieldModule`
 
-## Further help
+## Dummy-object and dummy-array component
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+as i had doubs what you mean with `The main page should have a list of (dummy data) properties which can be added to, removed and updated via a dialogue window` i made two components (Dummy-object iterates value as object and dummy-array iterates an array of values (name, value))
+
+made two buttons on main page `Add new property` adds to list which works with localstorage and `add new property to object` which works directly with dummies
