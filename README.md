@@ -27,6 +27,6 @@ no validation messages
 
 ## Dummy-object and dummy-array component
 
-as i had doubs what you mean with `The main page should have a list of (dummy data) properties which can be added to, removed and updated via a dialogue window` i made two components (Dummy-object iterates value as object and dummy-array iterates an array of values (name, value))
+as I had doubs what you mean with `The main page should have a list of (dummy data) properties which can be added to, removed and updated via a dialogue window` I made two components (Dummy-object iterates value as object and dummy-array iterates an array of values (name, value))
 
-made two buttons on main page `Add new property` adds to list which works with localstorage and `add new property to object` which works directly with dummies
+made two buttons on main page `Add new property` adds to list which works with localstorage and `add new property to object` which works directly with dummies-objects
